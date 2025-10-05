@@ -53,6 +53,7 @@ def main():
 
     solveSudoku(field)
 
+    driver.find_element(By.XPATH, '//*[@id="0"]').click()
     for row in range(9):
         for col in range(9):
             value = field[row][col]
